@@ -24,4 +24,10 @@ jobs:
     steps:
       - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          aws-region: us-east-2
+          role-to-assume: arn:aws:iam::371730740033:role/aws-sam-cli-managed-test-pipe-PipelineExecutionRole-x8f4JFFe2VMY
+          audience: sts.amazonaws.com
+
+          
             
