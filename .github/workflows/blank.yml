@@ -30,7 +30,7 @@ jobs:
         with:
           aws-region: us-east-2
           role-to-assume: arn:aws:iam::371730740033:role/aws-sam-cli-managed-test-pipe-PipelineExecutionRole-x8f4JFFe2VMY
-          audience: sts.amazonaws.com
+          audience: ""
       - name: Install aws cli
         run: python -m pip install --upgrade pip awscli
         shell: bash
